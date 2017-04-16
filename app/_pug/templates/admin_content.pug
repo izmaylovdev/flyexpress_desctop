@@ -1,0 +1,136 @@
+include ../common/mixins
+.admin
+    form(action="/" method="GET").search-form
+        input(type="text" placeholder="Поиск по номеру заказа или дате заезда").search-form__input 
+        button(type='submit').search-form__button Искать
+    table.table
+        thead
+            -var items = ['Номер и дата<br> заказа', 'Дата заезда и <br> количество <br> ночей', 'Отель', "Клиент", "Поставщик", "Оплачено", "Сума <br> к оплате", "Менеджер"];
+            tr
+                each item in items
+                    th !{item}  
+        tbody
+            tr
+                td 
+                    | №27229 05.11.2016 20:50:20
+                    a(href="#") Версия для печати  
+                    a(href="#") Договор
+                td 30.12.16 <br> на 3 ночи
+                td 
+                    | Куба Варадеро
+                    a(href="#") Melia Las Antillas 4*
+                    a(href="#").admin__margin-top15 
+                td
+                    b.admin__mb10 Смирнов Дмитрий Иванович
+                    | smirnov@mail.ru 
+                    br
+                    | +7(983)467-35-83 
+                    br
+                    | Россия, Екатеринбург 
+                    br
+                    | заказ от агенства Fly Express
+                    a(href="#").admin__mt10 Добавить комментарий
+                td Hotelbeds
+                td
+                    +icon('done','blue')
+                    br
+                    b 100%
+                    br
+                    b 02.04.17
+                    br
+                    | 136 790 р.
+                    br
+                    | 1200 EUR
+                td
+                    b 5600 p
+                    span.admin__margin-top15  оплата: 
+                    span.admin__green-text Безналоженным платежом
+                td
+                    from.admin__reset-form
+                        input.admin__reset-input
+                        button(type="submit").admin__reset-button
+                            +icon('reset','')
+                    a(href="#").admin__pic-link
+                        +icon('arr-down','')
+                        span Подробности заказа
+        tbody
+            tr
+                td 
+                    | №27229 05.11.2016 20:50:20
+                    a(href="#") Версия для печати  
+                    a(href="#") Договор
+                td 30.12.16 <br> на 3 ночи
+                td 
+                    | Куба Варадеро
+                    a(href="#") Melia Las Antillas 4*
+                    a(href="#").admin__margin-top15 
+                td
+                    b.admin__mb10 Смирнов Дмитрий Иванович
+                    | smirnov@mail.ru 
+                    br
+                    | +7(983)467-35-83 
+                    br
+                    | Россия, Екатеринбург 
+                    br
+                    | заказ от агенства Fly Express
+                    a(href="#").admin__mt10 Добавить комментарий
+                td Hotelbeds
+                td
+                    +icon('not','')
+                    br
+                    b 0%
+                    br
+                    b 02.04.17
+                    br
+                    | 136 790 р.
+                    br
+                    | 1200 EUR
+                td
+                    b 5600 p
+                    span.admin__margin-top15  оплата: 
+                    span.admin__green-text Безналоженным платежом
+                td
+                    from.admin__reset-form
+                        input.admin__reset-input
+                        button(type="submit").admin__reset-button
+                            +icon('reset','')
+                    a(href="#").admin__pic-link
+                        +icon('arr-down','')
+                        span Подробности заказа
+            tr(style="display: none;")
+                td(colspan="8")
+                    table
+                        tr
+                            td номер брони:
+                                br
+                                | 6910037
+                            td статус бронирования:
+                                br
+                                span.admin__red отменено
+                            td 
+                                b Номер:
+                                br
+                                | DOUBLE DELUXE
+                            td
+                                b кол-во номеров:
+                                br
+                                | 1
+                            td 
+                                b Питание:
+                                br
+                                | все включено
+                            td
+                                b Взрослые:
+                                br
+                                | Smornov Dmitriy
+                                br
+                                | Antonov Ilya
+                                br
+                                br
+                                b Дети:
+                                br
+                                | Smirnov Aleksey
+                            td
+                                b Штрафы
+                                br
+                                | с 26.12.2016 20:59 штраф 289 EUR Возможности изменения Фамилии изменения Фамилии заезжающего после бронирования НЕТ штраф при изменении с 26.12.2016 20:59 штраф 289 EUR

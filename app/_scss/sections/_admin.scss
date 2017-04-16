@@ -1,0 +1,191 @@
+$blue: #1093FF;
+
+.icon_blue{
+    color: $blue;
+}
+.container-big{
+    width: 1200px;
+    margin: auto;
+}
+.admin{
+    *{
+        box-sizing: border-box;
+    }
+    .search-form{
+        display: flex;
+
+        &__input{
+            flex: 1;
+            padding: 15px 25px;
+            border: 1px solid white;
+        }
+        &__button{
+            padding: 15px 40px;
+            background: $blue;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+    .table{
+        margin-top: 18px;
+        width: 100%;
+        
+        table{
+            width: 100%;
+            
+        }
+        thead,tbody{
+
+        }
+        thead{
+            background: #F2F2F2;
+        }
+        & > tbody{
+            background: white;
+            border-top: 10px solid #E6E6E6;
+        }
+        th,td{
+            padding:10px;
+            line-height: 18px;
+            vertical-align: top;
+
+            .icon{
+                font-size: 22px;
+            }
+
+            &:nth-child(1){
+                width: 175px;
+                padding-left: 30px;
+            }
+            &:nth-child(2){
+                width: 120px;
+            }
+            &:nth-child(3){
+                width: 170px;
+            }
+            &:nth-child(4){
+                width: 240px;
+            }
+            &:nth-child(5){
+                width: 100px;
+            }
+            &:nth-child(6){
+                width: 90px;
+            }
+            &:nth-child(7){
+                width: 110px;
+            }
+            &:nth-child(7){
+                width: 110px;
+            }
+            &:nth-child(8){
+                width: 110px;
+                padding-right: 30px;
+            }
+        }
+        a{
+            display: block;
+            margin-top: 8px;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        b{
+            color: black;
+        }
+        td{
+            padding: 20px 10px;
+            
+        }
+        th{
+            font-weight: 600;
+        }
+        tr:not(:first-child){
+            border-top: 1px solid #E6E6E6;
+        }
+        .admin__pic-link{
+            display: flex;
+            margin-top: 20px;
+
+            .icon{
+                margin-right: 10px;
+                font-size: 33px;
+            }
+            &.active{
+                .icon{
+                    transform: rotateZ(180deg);
+                }
+            }
+        }
+    }
+
+    &__mb10{
+        margin-bottom: 10px;
+        display: block;
+    }
+    &__mt10{
+        margin-top: 10px;
+        display: block;
+    }
+    &__red{
+        color: #E8626C;
+    }
+    &__green-text{
+        color: #009245;
+        font-weight: 600;
+    }
+    &__margin-top15{
+        display: block;
+        margin-top: 15px;
+    }
+    &__reset-form{
+        display: flex;
+    }
+    &__reset-input{
+        width: 115px;
+        padding: 5px;
+    }
+    &__reset-button{
+        background: $blue;
+        padding: 5px;
+        border: none;
+        display: flex;
+        cursor: pointer;
+        
+        .icon{
+            font-size: 17.6px;
+            margin: auto;
+        }
+    }  
+    .table table td{
+        padding:10px;
+        line-height: 18px;
+        vertical-align: top;
+
+        &:nth-child(1){
+            width: 125px;
+            padding-left: 0px;
+        }
+        &:nth-child(2){
+            width: 140px;
+        }
+        &:nth-child(3){
+            width: 170px;
+        }
+        &:nth-child(4){
+            width: 180px;
+        }
+        &:nth-child(5){
+            width: 150px;
+        }
+        &:nth-child(6){
+            width: 150px;
+        }
+        &:nth-child(7){
+            width: 310px;
+        }
+    }
+}

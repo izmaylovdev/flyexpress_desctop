@@ -1,0 +1,10 @@
+mixin icon(name,mod)
+	- mod = mod? " icon_" + mod : ''
+	svg(class="icon icon-" + name + mod)
+		use(xlink:href="pictures/sprite.svg#" + name)
+mixin logo(mod)
+	-var src = mod == 'withTitle'? 'pictures/logoWithTitle.svg' : 'pictures/logo.svg';
+	.logo
+		a(href="#", title="fly express").logo__link
+			img(src=src, alt="fly express").logo__img
+			

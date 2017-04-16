@@ -1,0 +1,14 @@
+include ../common/mixins
+
+footer.footer
+	+logo('withTitle')
+	.offices
+		ul.offices__list
+			-var items = [{tel:'+7 (495) 127-05-06', city: 'м. Тверская '}, {tel: '+7 (495) 241-35-34', city: 'м. Чистые Пруды'}, {tel: '+7 (495) 775-87-87', city: 'м. Новослободская'}]
+			each item in items
+				li.offices__item
+					a(href="#", title="Позвоните нам").offices__link=item.tel
+					span.offices__text= item.city
+	include socials
+	span.footer__copy &copy; "Флай Экспресс Тревел", 2003-2016.
+	a(href="#").footer__link Перейти на полную версию сайта

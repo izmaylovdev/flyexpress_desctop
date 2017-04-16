@@ -1,0 +1,34 @@
+.popup
+    .popup__cover
+        .popup__body
+            .tabs
+            ul.tabs__titles-list
+                li.tabs__titles-item
+                    a(href="#").tabs__link.tabs__link_active Войти
+                li.tabs__titles-item
+                    a(href="#").tabs__link Зарегистрироваться
+            ul.tabs__list
+                li.tabs__tab.tabs__tab_active
+                    form.popup__form
+                        label
+                            span e-mail
+                            input(type="mail" name="mail" required placeholder="Введите e-mail")
+                        label
+                            span пароль 
+                            input(type="password" name="pas" required placeholder="Введите пароль") 
+                        .popup__form-footer
+                            button(type="submit") Войти
+                            a(href="#", title="Востановление пароля").popup__form-forgot Забилы пароль?
+                li.tabs__tab
+                    form.popup__form
+                        label
+                            span e-mail
+                            input(type="mail" name="mail" required placeholder="Введите e-mail")
+                        label
+                            span пароль 
+                            input(type="password" name="pas" required placeholder="Введите пароль") 
+                        label
+                            span повторите пароль 
+                            input(type="password" name="pas2" required placeholder="Введите пароль") 
+                        .popup__form-footer
+                            button(type="submit") Зарегистрироваться

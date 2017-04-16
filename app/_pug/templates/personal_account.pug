@@ -1,0 +1,149 @@
+include ../common/mixins
+.account
+    .account__top
+        h1.account__title Измайлов Михаил Сергеевич
+        .accout__right
+            a(href="#").account__control-link.popup-trigger Сменить пароль
+            span  | 
+            a(href="#").account__control-link Выйти
+    ul.account__tables-list
+        li.account__tables-item
+            table.account__table
+                thead
+                    tr
+                        -var headers = ['Номер и дата <br> заказа',"Дата заезда","Отель","Количество <br> ночей","Тип оплаты", "Оплачено",'Сумма <br> к оплате'];
+                        each header in headers
+                            th !{header}
+                        th &nbsp;
+                tbody
+                    tr
+                        td №27229 <br> 05.11.2016 <br> <a href="#">Договор</a>
+                        td 11.05.2017
+                        td Куба Варадеро <br> <a href="#">Melia Las Antillas 4*</a>
+                        td 3
+                        td Оплата картой
+                        td 
+                            span.account__centered
+                                +icon('not','')
+                                | 0%
+                        td 
+                            b 175 EUR <br> 11200 руб. 
+                        td 
+                            a(href="#").account__pay-button Оплатить
+            table.account__table.account__table_light
+                thead
+                    tr
+                        -var headers = ["Номер брони","Статус <br> бронирования","Тип номера","Количество <br> номеров","Заезжающие <br> взрослые","Заезжающие <br> дети","Правила отмены <br> бронирования"];
+                        each header in headers
+                            th !{header}
+                        th &nbsp;
+                tbody
+                    tr
+                        td EA55953/01
+                        td 
+                            +icon('done','green')
+                            br
+                            span.account__margin-top12 забронировано 
+                            a(href="#") Проверить статус
+                        td Single Room - With Breakfast (Включены завтраки)
+                        td 1
+                        td Smirnov Dmitriy <br> Antonov Ilya
+                        td Smirnov Aleksey
+                        td SWB <br> до 08.05.2017 14:30 за 3 дня до заезда беслплатно после 08.05.2017 14:30 штраф в размете стоимости  1 Nt x 100.00% пребывания
+                            br
+                            a(href="#").account__cancel-link Отменить
+        li.account__tables-item
+            table.account__table
+                thead
+                    tr
+                        -var headers = ['Номер и дата <br> заказа',"Дата заезда","Отель","Кол-во ночей","Тип оплаты", "Оплачено",'Сумма <br> к оплате'];
+                        each header in headers
+                            th !{header}
+                        th &nbsp;
+                tbody
+                    tr
+                        td №27229 <br> 05.11.2016 <br> <a href="#">Договор</a>
+                        td 11.05.2017
+                        td Куба Варадеро <br> <a href="#">Melia Las Antillas 4*</a>
+                        td 3
+                        td Оплата картой
+                        td 
+                            span.account__centered
+                                +icon('not','')
+                                | 0%
+                        td 
+                            b 175 EUR <br> 11200 руб. 
+                        td 
+                            a(href="#").account__pay-button Оплатить
+            table.account__table.account__table_light
+                thead
+                    tr
+                        -var headers = ["Номер брони","Статус <br> бронирования","Тип номера","Кол-во <br> номеров","Заезжающие <br> взрослые","Заезжающие <br> дети","Правила отмены <br> бронирования"];
+                        each header in headers
+                            th !{header}
+                        th &nbsp;
+                tbody
+                    tr
+                        td EA55953/01
+                        td 
+                            +icon('important','')
+                            br
+                            span.account__margin-top12 ожидает подтверждения
+                            a(href="#") Проверить статус
+                        td Single Room - With Breakfast (Включены завтраки)
+                        td 1
+                        td Smirnov Dmitriy <br> Antonov Ilya
+                        td Smirnov Aleksey
+                        td SWB <br> до 08.05.2017 14:30 за 3 дня до заезда беслплатно после 08.05.2017 14:30 штраф в размете стоимости  1 Nt x 100.00% пребывания
+                            br
+                            a(href="#").account__cancel-link Отменить
+        li.account__tables-item
+            table.account__table
+                thead
+                    tr
+                        -var headers = ['Номер и дата <br> заказа',"Дата заезда","Отель","Кол-во ночей","Тип оплаты", "Оплачено",'Сумма <br> к оплате'];
+                        each header in headers
+                            th !{header}
+                        th &nbsp;
+                tbody
+                    tr
+                        td №27229 <br> 05.11.2016 <br> <a href="#">Договор</a>
+                        td 11.05.2017
+                        td Куба Варадеро <br> <a href="#">Melia Las Antillas 4*</a>
+                        td 3
+                        td Оплата картой
+                        td 
+                            span.account__centered
+                                +icon('done','green')
+                                | 100%
+                        td 
+                            b 175 EUR <br> 11200 руб. 
+                        td 
+                            a(href="#").account__download-button Скачать ваучер
+            table.account__table.account__table_light
+                thead
+                    tr
+                        -var headers = ["Номер брони","Статус <br> бронирования","Тип номера","Кол-во <br> номеров","Заезжающие <br> взрослые","Заезжающие <br> дети","Правила отмены <br> бронирования"];
+                        each header in headers
+                            th !{header}
+                        th &nbsp;
+                tbody
+                    tr
+                        td EA55953/01
+                        td 
+                            +icon('done','green')
+                            br
+                            span.account__margin-top12 забронировано
+                            a(href="#") Проверить статус
+                        td Single Room - With Breakfast (Включены завтраки)
+                        td 1
+                        td Smirnov Dmitriy <br> Antonov Ilya
+                        td Smirnov Aleksey
+                        td SWB <br> до 08.05.2017 14:30 за 3 дня до заезда беслплатно после 08.05.2017 14:30 штраф в размете стоимости  1 Nt x 100.00% пребывания
+                            br
+                            a(href="#").account__cancel-link Отменить
+
+                        
+
+
+

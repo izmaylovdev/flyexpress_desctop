@@ -1,0 +1,11 @@
+include ../common/mixins
+header.header
+    .header__left
+        a(href="#").aside-trigger#asideTrigger
+            -for(i = 3; i; i--)
+                i.aside-trigger__icon
+    .header__center
+        img(src="pictures/tour_comp.svg", alt="Туристическая компания").header__text-img
+        a(href="#", title="Консультация по телефону").header__link +7 (495) 241-35-34
+    .header__right
+        +logo('')
